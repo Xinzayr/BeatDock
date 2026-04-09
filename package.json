@@ -4,7 +4,7 @@
   "description": "A modern and efficient Discord music bot with slash commands, multi-language support, and Docker deployment.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node --import './keepalive.js' src/index.js",
     "docker:build": "docker build -t beatdock:latest .",
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down",
